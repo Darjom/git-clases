@@ -106,7 +106,3 @@ git lg                # alias sugerido
 | Editar el último commit con `--amend` y forzar‑push a una rama propia. | Simular conflicto y resolverlo con VS Code.   |
 
 > *Cada commit es una mini‑historia. Quiero que mis historias sean interesantes y fáciles de entender mañana.*
-
----
-
-*Clase elaborada desde la mirada de un estudiante: entre descubrimientos, alertas y micro‑retos para afianzar lo aprendido.*

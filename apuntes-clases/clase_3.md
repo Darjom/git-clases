@@ -1,10 +1,5 @@
 # Clase 3 — Repositorios Remotos, GitHub y Flujos Básicos de Trabajo
 
-> **[Objetivo personal]** *Ya domino Git en local; hoy quiero “subir mis juguetes a la nube” y colaborar sin romper nada.*  
-> **[Idea extra]** *Probaré tanto HTTPS como SSH y decidiré cuál me resulta más cómodo.*
-
----
-
 ## 1 · ¿Qué es un repositorio remoto?
 
 Un **repositorio remoto** vive en un servidor (GitHub, GitLab, Bitbucket…) y actúa como *punto de sincronización* entre varios clones locales.
@@ -80,7 +75,7 @@ git remote add origin git@github.com:usuario/clases-git.git
 git push -u origin main
 ```
 
-> **[Prueba]** `ssh -T git@github.com` debe saludar con *“Hi usuario!”*.
+>`ssh -T git@github.com` debe saludar con *“Hi usuario!”*.
 
 ---
 
@@ -136,7 +131,7 @@ git push -u origin feature/footer
 * Vincula Issues (`Fixes #12`).  
 * Pide revisión a personas concretas.
 
-> **[Cheat]** *Plantillas de PR en `.github/PULL_REQUEST_TEMPLATE.md` aseguran consistencia.*
+> *Plantillas de PR en `.github/PULL_REQUEST_TEMPLATE.md` aseguran consistencia.*
 
 ---
 
@@ -151,7 +146,7 @@ git push -u origin feature/footer
   <img src="https://www.jorgeacortes.com/blog/wp-content/uploads/2019/01/merge-conflict-solve-vs-code.gif" alt="VS Code conflict" width="600">
 </p>
 
-> **[Consejo]** *Activa la extensión “GitLens” para resolver conflictos con un clic.*
+>*Activa la extensión “GitLens” para resolver conflictos con un clic.*
 
 ---
 
@@ -189,7 +184,7 @@ git push -u origin feature/banner
 # → abrir PR en GitHub
 ```
 
-> **[Reflexión]** *El flujo local‑→ remoto‑→ PR se siente natural tras unos intentos.*
+> *El flujo local‑→ remoto‑→ PR se siente natural tras unos intentos.*
 
 ---
 
@@ -201,9 +196,3 @@ git push -u origin feature/banner
 | **push -u** | Fija la rama remota (*upstream*) para futuros push/pull. |
 | **PR** | Conversación + revisión + merge, todo en uno. |
 | **Fetch** | “Dame las novedades, ya veré qué hago con ellas”. |
-
-> **[Pensamiento final]** *Trabajar con remotos no es más que compartir tus “puntos de guardado” con todo el equipo. ¡Comparte responsablemente!*
-
----
-
-*Clase redactada por un estudiante que descubre GitHub, pregunta mucho y anota cada “¡aha!” para el próximo sprint.*

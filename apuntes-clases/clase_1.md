@@ -118,7 +118,3 @@ git commit -m "feat: primer commit"  # Committed
 | Usar `git commit --amend` para corregir el mensaje del primer commit. | Simular un error y usar `git checkout <id>` para inspeccionar el pasado.       |
 
 > *Entender los **porqués** detrás de cada comando me motiva a practicar más que memorizar sintaxis.*
-
----
-
-*Clase redactada desde la perspectiva de un estudiante que descubre Git y anota sus momentos “¡aha!” junto a próximos experimentos.*

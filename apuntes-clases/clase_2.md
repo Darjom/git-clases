@@ -5,7 +5,7 @@
 * `git add` pasa archivos a **staging**.  
 * `git commit` guarda el snapshot localmente.
 
-> **[Conexión mental]** *Hoy vamos a profundizar justo en la línea intermedia: del **add** al **commit** y lo que ocurre después.*
+>  *Hoy vamos a profundizar justo en la línea intermedia: del **add** al **commit** y lo que ocurre después.*
 
 ---
 
@@ -14,7 +14,7 @@
 | Campo            | Ejemplo                             | ¿Por qué importa?                   |
 |------------------|--------------------------------------|-------------------------------------|
 | **Hash** (SHA‑1) | `f3b9c0f…`                           | Identificador único ― nunca cambia. |
-| **Autor**        | *Daniel Reque `<daniel@ejemplo.com>`* | Rastro de quién hizo qué.           |
+| **Autor**        | *Daniel Reque `<danijo@gmail.com>`* | Rastro de quién hizo qué.           |
 | **Fecha**        | `2025‑05‑09 22:15 −04`               | Línea de tiempo precisa.            |
 | **Mensaje**      | `feat: añade sección commits`        | Historia legible para humanos.      |
 
@@ -35,7 +35,7 @@
    | `docs:` | `docs: actualiza README`       | Documentación       |
 3. Línea de título ≤ 50 caracteres; separa con línea en blanco y cuerpo opcional.
 
-> **[Idea nivel‑2]** *Instalar el hook **commitlint** para forzar este formato.*
+> *Instalar el hook **commitlint** para forzar este formato.*
 
 ---
 
@@ -50,7 +50,7 @@
 
 ![git log graph](/img/log_graf.jpeg)
 
-> **[Consejo]** *Crea un alias: `git config --global alias.lg "log --graph --oneline --decorate"`.*
+> *Crea un alias: `git config --global alias.lg "log --graph --oneline --decorate"`, esto ayuda mucho ya que te permite identificarte.*
 
 ---
 
@@ -63,7 +63,7 @@
 | Crear nuevo commit que revierte otro | `git revert <hash>`  | Ya lo habías compartido con otros. |
 | Volver a un commit y dejar cambios sin guardar | `git reset --soft <hash>` | Re‑acomodar historial local. |
 
-> **[Alerta]** *Evita `git reset --hard` hasta entender bien sus consecuencias.*
+> *Evita `git reset --hard` hasta entender bien sus consecuencias.*
 
 ---
 
@@ -86,7 +86,7 @@ git commit -m "feat: agrega apunte día 2"
 git lg                # alias sugerido
 ```
 
-> **[Reflexión]** *Ver los hashes me hace sentir que cada cambio es “fotografía” inmutable.*
+>*Ver los hashes me hace sentir que cada cambio es “fotografía” inmutable.*
 
 ---
 
@@ -105,7 +105,7 @@ git lg                # alias sugerido
 | Usar `git commit -v` para editar mensaje con diff a la vista. | Configurar **gpg‑sign** en tus commits. |
 | Editar el último commit con `--amend` y forzar‑push a una rama propia. | Simular conflicto y resolverlo con VS Code.   |
 
-> **[Pensamiento final]** *Cada commit es una mini‑historia. Quiero que mis historias sean interesantes y fáciles de entender mañana.*
+> *Cada commit es una mini‑historia. Quiero que mis historias sean interesantes y fáciles de entender mañana.*
 
 ---
 

@@ -1,10 +1,5 @@
 # Clase 1 — Introducción a Git y Control de Versiones
 
-> **[Primera impresión]** *¡Vaya, controlar **todas** las versiones suena intimidante!*  
-> **[Objetivo personal]** *Quiero terminar la sesión sabiendo iniciar un repo, hacer mi primer commit y —sobre todo— **entender** por qué lo hago.*
-
----
-
 ## 1 · ¿Por qué necesitamos un sistema de control de versiones?
 
 | Beneficio                | ¿Por qué me importa como estudiante?                                          |
@@ -14,30 +9,30 @@
 | **Seguridad e integridad**| El historial es mi “caja negra”; nada se pierde realmente.                   |
 | **Flexibilidad**          | Puedo experimentar en ramas sin miedo a dañar la línea principal.            |
 
-> **[Idea para probar]** *Crearé dos archivos `.txt`, haré commits separados y después usaré `git log --oneline` para ver el historial.*
+> *Crearé dos archivos `.txt`, haré commits separados y después usaré `git log --oneline` para ver el historial.*
 
 ---
 
 ## 2 · Git en una frase
 
-![Logo de Git](img\imagen_git.png)
+![Logo de Git](/img/imagen_git.png)
 
 > “Git es un **sistema de control de versiones distribuido**; cada clon contiene **todo** el historial.”
 
 * Repositorio local completo  →  puedo trabajar *offline*.  
 * Luego sincronizo con un repositorio remoto (GitHub, GitLab…).
 
-> **[Sugerencia]** *Probaré `git log --graph --oneline` para visualizar mi árbol cuando empiece a ramificar.*
+> **[Sugerencia]** *Probaré `git log --graph --oneline` para visualizar mi árbol cuando empiece a ramificar, ademas tambien hay un juego en itch.io que lo refleja mejor.*
 
 ---
 
 ## 3 · ¿Qué es un repositorio?
 
-![Estantería de versiones](ruta/a/imagen_estanteria.png)
+![Estantería de versiones](/img/imagen_estanteria.jpeg)
 
 Un **repositorio** es como una estantería con libros (versiones). Cada commit añade un nuevo libro.
 
-> **[Comparación personal]** *Es como guardar “save states” en un videojuego. Si algo sale mal, regreso a un save anterior.*
+> *Es como guardar “save states” en un videojuego. Por lo que no tengas miedo si algo sale mal*
 
 ---
 
@@ -89,7 +84,7 @@ Un **repositorio** es como una estantería con libros (versiones). Cada commit a
 | **Staged**   | `git add archivo`               |
 | **Committed**| `git commit -m "mensaje"`       |
 
-> **[Mini-reto]** *Modificar `README.md`, añadirlo, y antes de commitear usar `git diff --staged` para ver exactamente qué subiré.*
+> **[Concejo]** *Cuando realizes tu primer commit detente a pensar un poco como lo haces y el orden al inicio me confuncia mucho*
 
 ---
 
@@ -103,7 +98,7 @@ git add hola.txt                 # Staged
 git commit -m "feat: primer commit"  # Committed
 ```
 
-> **[Reflexión]** *¡Acabo de generar mi primer “libro” en la estantería!*
+> *Me acuerdo la primera vez que realize esto, me estaba mueriendo de miedo al no saber que tocar ni que comando usar, mas bien habia chatgpt para ayudarme*
 
 ---
 
@@ -122,7 +117,7 @@ git commit -m "feat: primer commit"  # Committed
 | Crear un alias: `git config --global alias.lg "log --graph --oneline"` | Probar un **hook** `pre-commit` que impida commits sin mensaje claro.          |
 | Usar `git commit --amend` para corregir el mensaje del primer commit. | Simular un error y usar `git checkout <id>` para inspeccionar el pasado.       |
 
-> **[Pensamiento final]** *Entender los **porqués** detrás de cada comando me motiva a practicar más que memorizar sintaxis.*
+> *Entender los **porqués** detrás de cada comando me motiva a practicar más que memorizar sintaxis.*
 
 ---
 
